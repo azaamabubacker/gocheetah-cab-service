@@ -21,7 +21,8 @@ public class User {
             generator = "user_sequence"
     )
     protected Long id;
-    protected String name;
+    protected String firstName;
+    protected String lastName;
     protected String email;
 
     protected String phone;
@@ -30,20 +31,50 @@ public class User {
 
     protected Date createdAt;
 
+    public User() {
+    }
+
+    public User(String firstName, String lastName, String email, String phone, String password, Date createdAt) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+        this.createdAt = createdAt;
+    }
+
     public Long getId() {
         return id;
+    }
+
+    public User(Long id, String firstName, String lastName, String email, String phone, String password, Date createdAt) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.phone = phone;
+        this.password = password;
+        this.createdAt = createdAt;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getEmail() {

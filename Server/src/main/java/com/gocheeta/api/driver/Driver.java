@@ -13,8 +13,9 @@ public class Driver extends User {
 
     Driver(){}
 
-    public Driver(String name, String email) {
-        this.name = name;
+    public Driver(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
     }
 

@@ -10,7 +10,7 @@ import java.util.*;
 @Service
 public class CustomerService {
 
-	@Autowired
+
 	private final CustomerRepository customerRepository;
 
 	public CustomerService(CustomerRepository customerRepository) {

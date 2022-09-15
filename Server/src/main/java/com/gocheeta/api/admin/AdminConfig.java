@@ -13,12 +13,14 @@ public class AdminConfig {
     CommandLineRunner commandLineRunner(AdminRepository repository){
         return args -> {
             Admin test1 = new Admin(
-                    "admin1",
-                    "admin1@gmail.com"
+                    "Jack",
+                    "Connor",
+                    "jackconnor@gmail.com"
             );
             Admin test2 = new Admin(
-                    "admin2",
-                    "admin2@gmail.com"
+                    "harry",
+                    "callum",
+                    "harrycallum@gmail.com"
             );
 
             repository.saveAll(List.of(test1, test2));

@@ -12,8 +12,9 @@ public class Customer extends User {
 
 	Customer(){}
 
-	public Customer(String name, String email) {
-		this.name = name;
+	public Customer(String firstName, String lastName, String email) {
+		this.firstName = firstName;
+		this.lastName = lastName;
 		this.email = email;
 	}
 
@@ -27,7 +28,15 @@ public class Customer extends User {
 
 	@Override
 	public String toString() {
-		return "Customer [id=" + id + ", name=" + name + ", email=" + email + "]";
+		return "Customer{" +
+				"defaultCity='" + defaultCity + '\'' +
+				", id=" + id +
+				", firstName='" + firstName + '\'' +
+				", lastName='" + lastName + '\'' +
+				", email='" + email + '\'' +
+				", phone='" + phone + '\'' +
+				", password='" + password + '\'' +
+				", createdAt=" + createdAt +
+				'}';
 	}
-
 }

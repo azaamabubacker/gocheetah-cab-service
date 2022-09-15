@@ -13,12 +13,14 @@ public class DriverConfig {
     CommandLineRunner driverCommandLineRunner(DriverRepository repository){
         return args -> {
             Driver test1 = new Driver(
-                    "driver1",
-                    "driver1@gmail.com"
+                    "James",
+                    "Smith",
+                    "jamessmith@gmail.com"
             );
             Driver test2 = new Driver(
-                    "driver2",
-                    "driver2@gmail.com"
+                    "Oliver",
+                    "Jake",
+                    "oliverjake@gmail.com"
             );
 
             repository.saveAll(List.of(test1, test2));

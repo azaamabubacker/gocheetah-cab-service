@@ -12,8 +12,9 @@ public class Admin extends User {
 
     Admin(){}
 
-    public Admin(String name, String email) {
-        this.name = name;
+    public Admin(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.email = email;
     }
 
