@@ -30,6 +30,7 @@ public class CustomerService {
 		if(customerByEmail.isPresent()){
 			throw new IllegalStateException("Email exist");
 		}
+
 		return customerRepository.save(customer);
 	}
 }

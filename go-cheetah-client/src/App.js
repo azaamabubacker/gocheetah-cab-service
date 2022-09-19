@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import CustomerRegister from "./components/CustomerRegister";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
+import SignIn from "./components/SignIn";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
           <Route index element={<Hero />} />
           <Route path="/" element={<Hero />}></Route>
           <Route path="/register" element={<CustomerRegister />}></Route>
-          <Route path="/nav" element={<NavBar />}></Route>
+          <Route path="/customer-profile" element={<NavBar />}></Route>
+          <Route path="/login" element={<SignIn />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

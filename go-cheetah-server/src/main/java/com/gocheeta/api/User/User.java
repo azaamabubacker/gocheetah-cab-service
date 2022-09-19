@@ -2,8 +2,12 @@ package com.gocheeta.api.User;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.sun.istack.NotNull;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
 @Entity
@@ -21,9 +25,14 @@ public class User {
             generator = "user_sequence"
     )
     protected Long id;
+
     protected String firstName;
+
     protected String lastName;
+
+
     protected String email;
+
 
     protected String phone;
 
