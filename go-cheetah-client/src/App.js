@@ -1,23 +1,23 @@
 import "./App.css";
-import Hero from "./components/Hero";
-import CustomerRegister from "./components/CustomerRegister";
+import Navigation from "./components/Navigation";
+import HeroSection from "./components/HeroSection";
+import NewRegister from "./components/NewRegister";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar";
 import SignIn from "./components/SignIn";
 
-function App() {
+function App(props) {
   return (
-    <div className="App ">
+    <>
       <BrowserRouter>
+        <Navigation />
         <Routes>
-          <Route index element={<Hero />} />
-          <Route path="/" element={<Hero />}></Route>
-          <Route path="/register" element={<CustomerRegister />}></Route>
-          <Route path="/customer-profile" element={<NavBar />}></Route>
-          <Route path="/login" element={<SignIn />}></Route>
+          <Route index element={<HeroSection />} />
+          <Route path="/" element={<HeroSection />}></Route>
+          <Route path="/register" element={<NewRegister />} />
+          <Route path="/signin" element={<SignIn />} />
         </Routes>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 

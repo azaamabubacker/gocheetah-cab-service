@@ -1,0 +1,24 @@
+.hero {
+  min-height: 90vh;
+  background: no-repeat;
+  background-size: cover;
+  background-image: url(https://images.unsplash.com/photo-1551289140-3ad42f759acb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+}
+
+h2:first-child {
+  margin-top: 5rem;
+}
+
+h2 {
+  margin: 0;
+}
+
+.h2_bottom {
+  margin-bottom: 3rem;
+}

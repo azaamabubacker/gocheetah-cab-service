@@ -1,0 +1,30 @@
+.nav {
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  background-color: #feda15;
+}
+
+.nav ul {
+  display: flex;
+  flex: 1 1;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+a {
+  color: #383838;
+  text-decoration: none;
+}
+
+.main_head {
+  background-color: #feda15;
+  color: #000000;
+}
+
+.logo {
+  flex: 2 1 40rem;
+  cursor: pointer;
+}

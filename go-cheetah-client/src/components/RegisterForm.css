@@ -1,0 +1,54 @@
+.new-expense__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.new-expense__control label {
+  font-weight: normal;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.new-expense__control input {
+  font: inherit;
+  padding: 1.2rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.new-expense__actions {
+  text-align: right;
+}
+
+input[type="text"] {
+  font-size: 1.5rem;
+}
+
+input[type="email"] {
+  font-size: 1.5rem;
+}
+
+input[type="number"] {
+  font-size: 1.5rem;
+}
+
+input[type="password"] {
+  font-size: 1.4rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
