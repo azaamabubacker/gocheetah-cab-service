@@ -33,4 +33,19 @@ public class CustomerService {
 
 		return customerRepository.save(customer);
 	}
+
+	public boolean deleteCustomer(Long id) {
+		Customer customer = customerRepository.findById(id).get();
+		customerRepository.delete(customer);
+		return false;
+	}
+
+	public Customer updateCustomer(Long id, Customer customer) {
+//	Customer customer = customerRepository.findById(id).get();
+	customer.setEmail(customer.getEmail());
+	customer.setFirstName(customer.getFirstName());
+	customer.setLastName(customer.getLastName());
+	customer.setPhone(customer.getPhone());
+		return null;
+	}
 }

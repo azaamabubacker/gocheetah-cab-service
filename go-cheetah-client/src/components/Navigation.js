@@ -10,6 +10,10 @@ function Navigation() {
   const navigateHome = () => {
     navigate("/");
   };
+
+  const navigateToCustomerList = () => {
+    navigate("/customerlist");
+  };
   return (
     <div className="main_head">
       <div className="nav">
@@ -23,7 +27,14 @@ function Navigation() {
             </a>
           </li>
           <li>
-            <a href="#">Sign In</a>
+            <a href="#" onClick={navigateToRegister}>
+              Sign In
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={navigateToCustomerList}>
+              Admin
+            </a>
           </li>
         </ul>
       </div>

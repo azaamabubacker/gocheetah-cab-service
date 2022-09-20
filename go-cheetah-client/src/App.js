@@ -3,7 +3,8 @@ import Navigation from "./components/Navigation";
 import HeroSection from "./components/HeroSection";
 import NewRegister from "./components/NewRegister";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SignIn from "./components/SignIn";
+
+import CustomerList from "./components/CustomerList";
 
 function App(props) {
   return (
@@ -14,7 +15,7 @@ function App(props) {
           <Route index element={<HeroSection />} />
           <Route path="/" element={<HeroSection />}></Route>
           <Route path="/register" element={<NewRegister />} />
-          <Route path="/signin" element={<SignIn />} />
+          <Route path="/customerlist" element={<CustomerList />} />
         </Routes>
       </BrowserRouter>
     </>

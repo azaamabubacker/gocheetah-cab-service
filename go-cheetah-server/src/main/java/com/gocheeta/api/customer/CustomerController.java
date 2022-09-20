@@ -34,4 +34,21 @@ public class CustomerController {
         return customerService.addNewCustomer(customer);
     }
 
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Map<String, Boolean>> deleteCustomer(@PathVariable Long id) {
+    boolean deleted = false;
+    deleted= customerService.deleteCustomer(id);
+    Map<String, Boolean> response = new HashMap<>();
+    response.put("deleted", deleted);
+    return ResponseEntity.ok(response);
+
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<Customer> updateCustomer(@PathVariable Long id, @RequestBody Customer customer) {
+        customer = customerService.updateCustomer(id, customer);
+        return ResponseEntity.ok(customer);
+
+    }
+
 }

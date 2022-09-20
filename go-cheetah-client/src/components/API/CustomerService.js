@@ -5,8 +5,13 @@ class CustomerService {
   saveUser(user) {
     return axios.post(CUSTOMER_API_BASE_URL, user);
   }
-  // getCustomerById(id) {
-  //   return axios.get(EMPLOYEE_API_BASE_URL + "/" + id);
-  // }
+
+  getCustomers() {
+    return axios.get(CUSTOMER_API_BASE_URL);
+  }
+
+  deleteCustomer(id) {
+    return axios.delete(CUSTOMER_API_BASE_URL + "/" + id);
+  }
 }
 export default new CustomerService();
